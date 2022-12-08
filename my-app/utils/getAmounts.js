@@ -21,7 +21,7 @@ export const getEtherBalance = async (provider, address, contract = false) => {
   }
 };
 
-export const getCDTokenBalance = async (provider, address) => {
+export const getCDTokensBalance = async (provider, address) => {
   try {
     const tokenContract = new Contract(
       TOKEN_CONTARCT_ADDRESS,
@@ -49,7 +49,7 @@ export const getLPTokensBalance = async (provider, address) => {
   }
 };
 
-export const getReservOfCDTokens = async (provider) => {
+export const getReserveOfCDTokens = async (provider) => {
   try {
     const exchangeContract = new Contract(
       EXCHANGE_CONTRACT_ADDRESS,
